@@ -1,7 +1,7 @@
 PROJECT: mini-playlist
 AUTHOR: Ahmet TANGAZ (251478015)
-VERSION: v0
-DATE: 2026-03-13
+VERSION: v1
+DATE: 2026-03-28
 
 ==========================================
 		OVERVIEW
@@ -10,7 +10,7 @@ DATE: 2026-03-13
 mini playlist is a programme for listening 
 to music.
 It keeps songs listed and allows user to 
-add, show, search and remove.
+add, show, and remove.
 
 All data is persisted in a directory called 
 .miniplaylist/playlists.dat in the current 
@@ -45,18 +45,9 @@ have song to remove"
 ---------------------show-----------------
 Usage: python minipl.py show
 Showing all songs, one per line:
-1 | Dark Red Steve | Lacy
-2 | Shut Up My Moms Calling | Hotel Ugly
+1 | Dark Red | Steve Lacy | Dark Red
+2 | Shut Up My Moms Calling | Hotel Ugly | Shut Up My Moms Calling
 if no song exits, prints "List is empty"
-
--------------------search-----------------
-Usage: python minipl.py search "Steve"
-Searches for a keyword in song names, 
-artists, and albums.
-If a match is found, it shows the songs one
-per line.
-If no matches exist, prints "No matches 
-found for <keyword>"
 
 ==========================================
 		DATA FORMAT
@@ -76,34 +67,3 @@ Example:
 init"
 -Invalid command: print "Unknown command: 
 <command> [args]"
-
-==========================================
-		TESTS
-==========================================
--The following test cases must be 
-implemented in the "test_spec.py" file. 
--They are designed to validate the core 
-commands, edge cases, and error handling 
-defined in this SPEC. 
--An AI coding assistant can use these exact
-function names to generate the automated 
-test suite 
-(using pytest): test_init_creates_directory
-
-- Test cases:
-
-test_init_already_exists
-test_add_one_song
-test_add_multiple_songs
-test_list_no_songs
-test_list_one_song
-test_list_songs
-test_remove_song
-test_remove_nonexistent_song
-test_command_without_init
-test_invalid_command
-test_search_song
-test_search_nonexistent_song
-test_search_remove_then_search
-test_search_case_insensitive
-test_search_no_match
