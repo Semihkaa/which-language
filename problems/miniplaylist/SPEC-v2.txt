@@ -1,0 +1,29 @@
+PROJECT: mini-playlist
+AUTHOR: Ahmet TANGAZ (251478015)
+VERSION: v2
+DATE: 2026-03-28
+
+==========================================
+		OVERVIEW
+==========================================
+mini-playlist is a command-line program for
+managing a music playlist.
+Version 2 introduces the advanced search
+functionality.
+
+All V1 commands (init, add, remove, show)
+must continue to work exactly as specified
+in SPEC-v1.txt.
+
+==========================================
+		NEW COMMANDS
+==========================================
+
+-------------------search-----------------
+Usage: python minipl.py search "Steve"
+Searches for a keyword in song names, 
+artists, and albums.
+If a match is found, it shows the songs one
+per line.
+If no matches exist, prints "No matches 
+found for <keyword>"

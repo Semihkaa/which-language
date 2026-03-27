@@ -1,0 +1,69 @@
+PROJECT: mini-playlist
+AUTHOR: Ahmet TANGAZ (251478015)
+VERSION: v1
+DATE: 2026-03-28
+
+==========================================
+		OVERVIEW
+==========================================
+
+mini playlist is a programme for listening 
+to music.
+It keeps songs listed and allows user to 
+add, show, and remove.
+
+All data is persisted in a directory called 
+.miniplaylist/playlists.dat in the current 
+working directory.
+
+==========================================
+		COMMANDS
+==========================================
+
+------------------init--------------------
+Usage: python minipl.py init
+Creates a .miniplaylist/ directory and an 
+empty playlists.dat file.
+If .miniplaylist/ already exists, print 
+"Already initialized" and exit.
+
+-------------------add--------------------
+Usage: python minipl.py add "Dark Red" 
+"Steve Lacy" "Dark Red"
+Appends a new song to playlists.dat 
+Each song has: Name, Author, Album, 
+ID(auto-increment).
+Print "Song Added Successfully <Name>"
+
+------------------remove------------------
+Usage: python minipl.py remove 1
+Removes song #1 from playlists.dat
+Print "Song Succsessfully Removed <Name>"
+If song does not exist, prints "You don't 
+have song to remove"
+
+---------------------show-----------------
+Usage: python minipl.py show
+Showing all songs, one per line:
+1 | Dark Red | Steve Lacy | Dark Red
+2 | Shut Up My Moms Calling | Hotel Ugly | Shut Up My Moms Calling
+if no song exits, prints "List is empty"
+
+==========================================
+		DATA FORMAT
+==========================================
+File: .miniplaylist/playlists.dat
+Format: One song per line, fields separated 
+by |
+Example:
+1 | Dark Red | Steve  Lacy | Dark Red
+2 | Shut Up My Moms Calling | Hotel Ugly | Shut Up My Moms Calling
+
+==========================================
+		ERROR HANDLING
+==========================================
+- Running any command before "init": print 
+"Not initialized. Run: python minipl.py 
+init"
+-Invalid command: print "Unknown command: 
+<command> [args]"
