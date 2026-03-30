@@ -1,6 +1,6 @@
 # mini-scoreboard Projesi (V1)
 
-## V0'dan V1'e Geçiş ve Değişiklik Özeti
+## V1'dan V2'ye Geçiş ve Değişiklik Özeti
 Bu sürümde (V1), projenin altyapısına **while döngüleri** entegre edilmiş ve sistem statik veri yazmadan çıkıp dinamik veri okuma aşamasına geçmiştir.
 
 **Tamamlanan Görevler (Tasks):**
