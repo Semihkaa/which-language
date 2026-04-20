@@ -1,0 +1,4 @@
+Project: mini-diary 
+Update: Added date validation for search command.
+New Rule: If the date format is not YYYY-MM-DD, output: "Invalid date format. Use YYYY-MM-DD". 
+Author: Semih Oktay KARAOĞLU
